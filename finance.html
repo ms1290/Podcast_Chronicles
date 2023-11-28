@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/sports.jpg') center/cover no-repeat fixed;
+            color: #ECF0F1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow: hidden;
+        }
 
+        .blur-container {
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value for background transparency */
+            border-radius: 10px;
+            padding: 40px; /* Adjust the padding to increase the size of the box */
+            text-align: center;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+        h1 {
+            color: #ECF0F1;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        li {
+            margin: 10px 0;
+            background-color: #3498DB;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            background-color: #2980B9;
+        }
+
+        a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #ECF0F1;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #2C3E50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blur-container">
+        <h1>Sports interviews</h1>
+
+        <ul>
+            <li><a href="https://gaana.com/song/s03e05-padel-tennis-just-a-fad-or-here-to-stay-history-growth-of-the-game" target="_blank">Link 1</a></li>
+            <li><a href="https://gaana.com/season/sports-beyond-season-1" target="_blank">Link 2</a></li>
+            <li><a href="https://gaana.com/season/naye-india-ka-andaaz-inspirational-stories-podcast-kreedon-sports-season-1" target="_blank">Link 3</a></li>
+            <li><a href="https://open.spotify.com/show/43mTFxSHXF7Xtvjx4TF0Dc?si=eYrNSSRLQvqcJ9J7w98RRA" target="_blank">Link 4</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
