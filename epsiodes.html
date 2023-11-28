@@ -1,47 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(250, 251, 235); /* Ash background color */
+            color: #333; /* Set default text color for better visibility on the color */
+        }
+
+        header {
+            background-color: #cdd9e5; /* Darker ash color for the header */
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e6e2ff;
+            box-shadow: 0 0 10px rgba(211, 82, 82, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #434343;
+        }
+
+        p {
+            color: #6c757d;
+        }
+
+        button {
+            background-color: rgb(216, 246, 219); /* Ash color for buttons */
+            color: #333;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b0b0b0; /* Darker ash color on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Your page content goes here -->
+    <header>
+        <h1>Your Podcasts</h1>
+    </header>
 
-    <h1>Sports Interview</h1>
-    <p>This is a podcast that includes sports interviews.</p>
-    <a href = "sports.html">
-        <button onclick="showSportsInterviewContent()">Show Sports Interview Content</button>
-    </a>
+    <section>
+        <h1>Sports Interview</h1>
+        <p>This is a podcast that includes sports interviews.</p>
+        <a href="sports.html">
+            <button onclick="showSportsInterviewContent()">Show Sports Interview Content</button>
+        </a>
 
-    <h1>True Crime</h1>
-    <p>This is a podcast that includes true crime stories.</p>
-    <a href = "crime.html">
-        <button onclick="showTrueCrimeContent()">Show True Crime Content</button>
-    </a>
+        <h1>True Crime</h1>
+        <p>This is a podcast that includes true crime stories.</p>
+        <a href="crime.html">
+            <button onclick="showTrueCrimeContent()">Show True Crime Content</button>
+        </a>
 
-    <h1>Self-Help</h1>
-    <p>This is a podcast that focuses on self-help topics.</p>
-    <a href = "self_help.html">
-        <button onclick="showSelfHelpContent()">Show Self-Help Content</button>
-    </a>
-    
-    <h1>Finance</h1>
-    <p>This is a podcast that covers finance and money matters.</p>
-    <a href = "finance.html">
-        <button onclick="showFinanceContent()">Show Finance Content</button>
-    </a>
+        <h1>Self-Help</h1>
+        <p>This is a podcast that focuses on self-help topics.</p>
+        <a href="self_help.html">
+            <button onclick="showSelfHelpContent()">Show Self-Help Content</button>
+        </a>
 
-    <h1>TED Talks</h1>
-    <p>This is a podcast featuring TED Talks on various subjects.</p>
-    <button onclick="showTedTalksContent()">Show TED Talks Content</button>
+        <h1>Finance</h1>
+        <p>This is a podcast that covers finance and money matters.</p>
+        <a href="finance.html">
+            <button onclick="showFinanceContent()">Show Finance Content</button>
+        </a>
 
-    <h1>Technology</h1>
-    <p>This is a podcast that explores the latest in technology.</p>
-    <a href = "ted.html">
-        <button onclick="showTechnologyContent()">Show Technology Content</button>
-    </a>
+        <h1>TED Talks</h1>
+        <p>This is a podcast featuring TED Talks on various subjects.</p>
+        <button onclick="showTedTalksContent()">Show TED Talks Content</button>
+
+        <h1>Technology</h1>
+        <p>This is a podcast that explores the latest in technology.</p>
+        <a href="technology.html">
+            <button onclick="showTechnologyContent()">Show Technology Content</button>
+        </a>
+    </section>
 
     <script>
         function showSportsInterviewContent() {
@@ -71,3 +133,6 @@
 </body>
 
 </html>
+
+    
+   
