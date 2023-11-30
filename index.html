@@ -17,9 +17,9 @@
             text-align: left;
             padding: 20px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            background: url('./mainx.png') center/cover no-repeat fixed;
-
+            background-color: transparent; /* Removed background color */
         }
 
         nav {
@@ -27,6 +27,7 @@
             position: absolute;
             top: 20px;
             left: 20px;
+            z-index: 1; /* Set z-index to place it above the image */
         }
 
         nav a {
@@ -41,13 +42,14 @@
         }
 
         .login-link {
-            color:  #F4C2C2;
+            color: #F4C2C2;
             text-decoration: none;
             font-weight: bold;
             font-size: large;
             position: absolute;
             top: 20px;
             right: 20px;
+            z-index: 1; /* Set z-index to place it above the image */
         }
 
         img {
@@ -56,11 +58,17 @@
             object-fit: cover;
             display: block;
             margin: 0 auto;
+            position: absolute; /* Added position absolute */
+            top: 0; /* Set top to 0 to start from the top */
+            left: 0; /* Set left to 0 */
         }
 
         main {
             text-align: center;
             margin: 20px;
+            position: relative; /* Added position relative */
+            z-index: 2; /* Set z-index to place it above the image */
+            padding-top: 100vh; /* Adjusted padding-top to ensure content is below the image */
         }
 
         footer {
@@ -84,10 +92,12 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="episodes.html">Episodes</a>
-            <a href="about.html">About</a>
+            <a href="./about.html">About</a>
         </nav>
-        <a href="login.html" class="login-link">Login</a>
+        <a href="./login.html" class="login-link">Login</a>
     </header>
+
+    <img src="./mainx.png" alt="Podcast Chronicle Image">
 
     <main>
         <h2>Your Gateway to Diverse Podcasts!</h2>
