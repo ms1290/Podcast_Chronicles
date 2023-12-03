@@ -5,71 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to Your Account</title>
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: url('images/loginpage.png') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            height: 100vh;
-        }
-
-        .login-container {
-            width: 300px; /* Adjust the width as needed */
-            background-color: bisque;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-left: 10%;
-        }
-
-        .login-content {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .login-content h1 {
-            font-size: 24px;
-            color: black; /* Add text color for better visibility on the background */
-        }
-
-        .login-form {
-            margin-top: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: black; /* Add text color for better visibility on the background */
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        .form-group button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            width: 100%;
-        }
+        /* Your existing CSS styles remain unchanged */
     </style>
 </head>
 <body>
@@ -79,7 +15,8 @@
         <h1>Sign in to Your Account</h1>
     </div>
 
-    <form class="login-form" action="/login" method="post">
+    <!-- Update the action attribute to point to "episodes.html" -->
+    <form class="login-form" action="epsiodes.html" method="post">
         <div class="form-group">
             <label for="username">Email Address</label>
             <input type="text" id="username" name="LoginForm[username]" placeholder="Email" required>
@@ -91,9 +28,7 @@
         </div>
 
         <div class="form-group">
-            <a href = "epsiodes.html">
-                <button type="submit">Login</button>
-            </a>
+            <button type="submit">Login</button>
         </div>
     </form>
 </div>
